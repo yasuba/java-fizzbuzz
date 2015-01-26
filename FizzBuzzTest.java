@@ -52,4 +52,11 @@ public class FizzBuzzTest {
     assertEquals("fizz", fizzbuzz.playGame(3));
   }
 
+  @Test
+  public void knowsFiveIsBuzz() {
+    System.out.println("Test if play fizzbuzz five returns buzz...");
+    FizzBuzz fizzbuzz = new FizzBuzz();
+    assertEquals("buzz", fizzbuzz.playGame(5));
+  }
+
 }

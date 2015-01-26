@@ -24,8 +24,14 @@ public class FizzBuzz {
     }
   }
 
-  public static String playGame(int n) {
-    return "fizz";
+  public String playGame(int n) {
+    if (isDivisibleByThree(n) == true) {
+      return "fizz";
+    } else if (isDivisibleByFive(n) == true) {
+      return "buzz";
+    } else {
+      return String.valueOf(n);
+    }
   }
 
 }
