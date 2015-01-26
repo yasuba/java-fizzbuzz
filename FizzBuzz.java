@@ -8,4 +8,16 @@ public class FizzBuzz {
     }
   }
 
+  public boolean isDivisibleByFive(int n) {
+    if (n % 5 == 0) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  public boolean isDivisibleByFifteen(int n) {
+    return true;
+  }
+
 }
