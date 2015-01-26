@@ -20,7 +20,7 @@ public class FizzBuzz {
     if (isDivisibleByFifteen(n)) return "fizzbuzz";
     if (isDivisibleByFive(n)) return "buzz";
     if (isDivisibleByThree(n)) return "fizz";
-    return String.valueOf(n);
+    return Integer.toString(n);
   }
 
 }
