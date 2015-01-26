@@ -17,7 +17,11 @@ public class FizzBuzz {
   }
 
   public boolean isDivisibleByFifteen(int n) {
-    return true;
+    if (n % 15 == 0) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
 }

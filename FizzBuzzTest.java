@@ -38,4 +38,11 @@ public class FizzBuzzTest {
     assertTrue("15 is divisible by 15", fizzbuzz.isDivisibleByFifteen (15));
   }
 
+  @Test
+  public void knowsOneIsntDivisibleByFifteen() {
+    System.out.println("Test if one isDivisibleByFifteen returns false...");
+    FizzBuzz fizzbuzz = new FizzBuzz();
+    assertFalse("1 is divisible by 15", fizzbuzz.isDivisibleByFifteen (1));
+  }
+
 }
