@@ -59,4 +59,10 @@ public class FizzBuzzTest {
     assertEquals("buzz", fizzbuzz.playGame(5));
   }
 
+  @Test
+  public void knowsFifteenIsFizzBuzz() {
+    System.out.println("Test if play fizzbuzz fifteen returns fizzbuzz...");
+    FizzBuzz fizzbuzz = new FizzBuzz();
+    assertEquals("fizzbuzz", fizzbuzz.playGame(15));
+  }
 }

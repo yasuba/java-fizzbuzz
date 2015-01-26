@@ -25,10 +25,12 @@ public class FizzBuzz {
   }
 
   public String playGame(int n) {
-    if (isDivisibleByThree(n) == true) {
-      return "fizz";
+    if (isDivisibleByFifteen(n) == true) {
+      return "fizzbuzz";
     } else if (isDivisibleByFive(n) == true) {
       return "buzz";
+    } else if (isDivisibleByThree(n) == true) {
+      return "fizz";
     } else {
       return String.valueOf(n);
     }
