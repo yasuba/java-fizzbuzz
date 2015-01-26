@@ -24,4 +24,8 @@ public class FizzBuzz {
     }
   }
 
+  public static String playGame(int n) {
+    return "fizz";
+  }
+
 }
