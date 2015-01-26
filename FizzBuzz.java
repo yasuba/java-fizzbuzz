@@ -1,39 +1,26 @@
 public class FizzBuzz {
 
   public boolean isDivisibleByThree(int n) {
-    if (n % 3 == 0) {
-      return true;
-    } else {
-      return false;
-    }
+    return isDivisibleBy(n, 3);
   }
 
   public boolean isDivisibleByFive(int n) {
-    if (n % 5 == 0) {
-      return true;
-    } else {
-      return false;
-    }
+    return isDivisibleBy(n, 5);
   }
 
   public boolean isDivisibleByFifteen(int n) {
-    if (n % 15 == 0) {
-      return true;
-    } else {
-      return false;
-    }
+    return isDivisibleBy(n, 15);
+  }
+
+  public boolean isDivisibleBy(int n, int divisor) {
+    return n % divisor == 0;
   }
 
   public String playGame(int n) {
-    if (isDivisibleByFifteen(n) == true) {
-      return "fizzbuzz";
-    } else if (isDivisibleByFive(n) == true) {
-      return "buzz";
-    } else if (isDivisibleByThree(n) == true) {
-      return "fizz";
-    } else {
-      return String.valueOf(n);
-    }
+    if (isDivisibleByFifteen(n)) return "fizzbuzz";
+    if (isDivisibleByFive(n)) return "buzz";
+    if (isDivisibleByThree(n)) return "fizz";
+    return String.valueOf(n);
   }
 
 }

@@ -46,6 +46,13 @@ public class FizzBuzzTest {
   }
 
   @Test
+  public void returnsOneForOne() {
+    System.out.println("Test if play fizzbuzz one returns one...");
+    FizzBuzz fizzbuzz = new FizzBuzz();
+    assertEquals("1", fizzbuzz.playGame(1));
+  }
+
+  @Test
   public void knowsThreeIsFizz() {
     System.out.println("Test if play fizzbuzz three returns fizz...");
     FizzBuzz fizzbuzz = new FizzBuzz();
